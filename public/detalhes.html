@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes | Museu Horizonte</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header border-bottom shadow-sm sticky-top bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+      <a href="index.html" class="logo fs-4 fw-bold text-primary text-decoration-none">Museu Horizonte</a>
+      <a href="index.html" class="btn btn-outline-primary">← Voltar</a>
+    </div>
+  </header>
+
+  <main class="container my-5" id="detalhes-container"></main>
+
+  <footer class="site-footer bg-light border-top text-center py-3">
+    <p class="mb-0">© 2025 Museu Horizonte | Desenvolvido por Matheus Nicoli</p>
+  </footer>
+
+  <div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <form id="formItem">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tituloModal">Editar Exposição</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="id">
+            <div class="row g-3">
+              <div class="col-md-8">
+                <label class="form-label">Título</label>
+                <input type="text" id="titulo" class="form-control" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Categoria</label>
+                <input type="text" id="categoria" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Data</label>
+                <input type="date" id="data" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Autor</label>
+                <input type="text" id="autor" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Descrição</label>
+                <input type="text" id="descricao" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Imagem (URL)</label>
+                <input type="url" id="imagem" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Conteúdo</label>
+                <textarea id="conteudo" rows="4" class="form-control" required></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="btnExcluir" type="button" class="btn btn-outline-danger me-auto">Excluir</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" id="btnSalvar">Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

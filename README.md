@@ -1,23 +1,30 @@
+Trabalho Prático 07 - Semanas 13 e 14
 
-# Trabalho Prático 07 - Semanas 13 e 14
+Nesta etapa foi criada uma página de visualização dinâmica para mostrar os dados cadastrados no CRUD de forma gráfica.
+Usei a biblioteca Chart.js para gerar um gráfico de barras que exibe a quantidade de exposições por categoria.
+O gráfico atualiza automaticamente conforme os dados do JSON Server mudam.
 
-A partir dos dados cadastrados na etapa anterior, vamos trabalhar formas de apresentação que representem de forma clara e interativa as informações do seu projeto. Você poderá usar gráficos (barra, linha, pizza), mapas, calendários ou outras formas de visualização. Seu desafio é entregar uma página Web que organize, processe e exiba os dados de forma compreensível e esteticamente agradável.
+Informações do trabalho
 
-Com base nos tipos de projetos escohidos, você deve propor **visualizações que estimulem a interpretação, agrupamento e exibição criativa dos dados**, trabalhando tanto a lógica quanto o design da aplicação.
+Nome: Matheus Nicoli
 
-Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fullcalendar.io/), [Chart.js](https://www.chartjs.org/), [Mapbox](https://docs.mapbox.com/api/), para citar algumas.
+Matrícula: 885645
 
-## Informações do trabalho
+Proposta de projeto escolhida: Sistema de exposições de um museu
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+Breve descrição:
+O projeto permite cadastrar, editar e excluir exposições, além de ver detalhes de cada uma. Nesta etapa foi adicionada uma tela de gráfico para visualizar os dados.
 
-**Print da tela com a implementação**
+Print da tela com a implementação
+Explicação da implementação
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Foi criada a página visualizacao.html, onde o gráfico é montado a partir da API local (/exposicoes).
+O arquivo visualizacao.js lê os dados do servidor, conta quantas exposições existem por categoria e exibe o resultado no gráfico.
+Também foram feitos dois testes com dados diferentes para mostrar o funcionamento dinâmico.
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+Tela 1 — Gráfico com dados iniciais
+![alt text](image.png)
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+Tela 2 — Gráfico atualizado após CRUD
+
+![alt text](image-1.png)

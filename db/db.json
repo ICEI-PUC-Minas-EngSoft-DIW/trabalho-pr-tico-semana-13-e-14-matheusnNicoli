@@ -14,5 +14,27 @@
       "nome": "Usuario Comum",
       "email": "user@abc.com"
     }
+  ],
+  "exposicoes": [
+    {
+      "id": "229b",
+      "titulo": "Hell divres",
+      "categoria": "jogos",
+      "data": "2025-11-04",
+      "autor": "Caio",
+      "descricao": "Uma exposição para falar de um jogo novo",
+      "imagem": "https://images.squarespace-cdn.com/content/v1/55ef0e29e4b099e22cdc9eea/578cceff-f72f-42fc-b216-442cffd493d9/Bugs.jpg",
+      "conteudo": "Print do jogo"
+    },
+    {
+      "id": "0421",
+      "titulo": "awdawd",
+      "categoria": "awdaw",
+      "data": "2025-10-28",
+      "autor": "awda",
+      "descricao": "awdaw",
+      "imagem": "https://images.squarespace-cdn.com/content/v1/55ef0e29e4b099e22cdc9eea/578cceff-f72f-42fc-b216-442cffd493d9/Bugs.jpg",
+      "conteudo": "awdaw"
+    }
   ]
 }
